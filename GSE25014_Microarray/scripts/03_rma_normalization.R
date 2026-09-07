@@ -222,23 +222,23 @@ head(raw_expression)
 #
 # ------------------------------------------------------------
 
-pdf(
-  file.path(
-    results_dir,
-    "GSE25014_boxplot_before_RMA.pdf"
-  ),
-  width = 12,
-  height = 6
-)
+#pdf(
+#  file.path(
+#    results_dir,
+#    "GSE25014_boxplot_before_RMA.pdf"
+#  ),
+#  width = 12,
+#  height = 6
+#)
 
-boxplot(
-  exprs(raw_data),
-  main = "GSE25014 - Before RMA",
-  las = 2,
-  cex.axis = 0.5
-)
+#boxplot(
+#  exprs(raw_data),
+#  main = "GSE25014 - Before RMA",
+#  las = 2,
+#  cex.axis = 0.5
+#)
 
-dev.off()
+#dev.off()
 
 
 # ------------------------------------------------------------
@@ -306,23 +306,23 @@ summary(expr_matrix)
 #
 # ------------------------------------------------------------
 
-pdf(
-  file.path(
-    results_dir,
-    "GSE25014_boxplot_after_RMA.pdf"
-  ),
-  width = 12,
-  height = 6
-)
+#pdf(
+#  file.path(
+#    results_dir,
+#    "GSE25014_boxplot_after_RMA.pdf"
+#  ),
+#  width = 12,
+#  height = 6
+#)
 
-boxplot(
-  exprs(rma_data),
-  main = "GSE25014 - After RMA",
-  las = 2,
-  cex.axis = 0.5
-)
+#boxplot(
+#  exprs(rma_data),
+#  main = "GSE25014 - After RMA",
+#  las = 2,
+#  cex.axis = 0.5
+#)
 
-dev.off()
+#dev.off()
 
 
 # ------------------------------------------------------------
@@ -333,43 +333,43 @@ dev.off()
 #
 # ------------------------------------------------------------
 
-pdf(
-  file.path(
-    results_dir,
-    "GSE25014_boxplot_before_after_RMA.pdf"
-  ),
-  width = 14,
-  height = 6
-)
+#pdf(
+#  file.path(
+#    results_dir,
+#    "GSE25014_boxplot_before_after_RMA.pdf"
+#  ),
+#  width = 14,
+#  height = 6
+#)
 
 
-par(mfrow = c(1, 2))
+#par(mfrow = c(1, 2))
 
 
 # Before RMA
 
-boxplot(
-  exprs(raw_data),
-  main = "Before RMA",
-  las = 2,
-  cex.axis = 0.5
-)
+#boxplot(
+#  exprs(raw_data),
+#  main = "Before RMA",
+#  las = 2,
+#  cex.axis = 0.5
+#)
 
 
 # After RMA
 
-boxplot(
-  exprs(rma_data),
-  main = "After RMA",
-  las = 2,
-  cex.axis = 0.5
-)
+#boxplot(
+#  exprs(rma_data),
+#  main = "After RMA",
+#  las = 2,
+#  cex.axis = 0.5
+#)
 
 
-par(mfrow = c(1, 1))
+#par(mfrow = c(1, 1))
 
 
-dev.off()
+#dev.off()
 
 
 # ------------------------------------------------------------
