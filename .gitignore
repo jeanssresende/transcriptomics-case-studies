@@ -84,3 +84,10 @@ figures/
 
 # macOS
 .DS_Store
+
+# ============================================================
+# Raw microarray data
+# ============================================================
+
+GSE25014_Microarray/data/raw/GSE25014/CEL/
+GSE25014_Microarray/data/raw/GSE25014/GSE25014_RAW.tar
